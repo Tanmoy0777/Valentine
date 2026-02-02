@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Preload for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background hearts (decorative) -->
+    <div class="hearts-background" aria-hidden="true">
+        <div class="floating-bg-heart">💗</div>
+        <div class="floating-bg-heart">💕</div>
+        <div class="floating-bg-heart">💖</div>
+        <div class="floating-bg-heart">💝</div>
+        <div class="floating-bg-heart">💘</div>
+        <div class="floating-bg-heart">❤️</div>
+        <div class="floating-bg-heart">💓</div>
+        <div class="floating-bg-heart">💞</div>
+    </div>
+
+    <!-- Main interactive area -->
+    <main class="main-container">
+        <!-- Question Screen (Initial State) -->
+        <section class="question-screen active" id="questionScreen">
+            <div class="content-card">
+                <!-- Decorative hearts -->
+                <div class="decorative-hearts">
+                    <span class="deco-heart">💖</span>
+                    <span class="deco-heart">💕</span>
+                </div>
+                
+                <h1 class="main-title">
+                    Will you be my
+                    <span class="highlight">Valentine?</span>
+                    <span class="emoji-pulse">💖</span>
+                </h1>
+                
+                <p class="subtitle">Choose wisely... or try to! 😏</p>
+                
+                <!-- Button Container with fixed area for evasion -->
+                <div class="buttons-wrapper" id="buttonsWrapper">
+                    <!-- YES Button - Always clickable -->
+                    <button class="btn btn-yes" id="yesBtn" aria-label="Say yes to being my Valentine">
+                        <span class="btn-text">Yes! ❤️</span>
+                        <span class="btn-shine"></span>
+                    </button>
+                    
+                    <!-- NO Button - Evades cursor, never clickable -->
+                    <button class="btn btn-no" id="noBtn" aria-label="Try to click no (you can't!)">
+                        <span class="btn-text">No 💔</span>
+                    </button>
+                </div>
+                
+                <p class="hint">💡 Hint: The "No" button is shy...</p>
+            </div>
+        </section>
+
+        <!-- Success Screen (After clicking Yes) -->
+        <section class="success-screen" id="successScreen">
+            <div class="content-card celebration-card">
+                <div class="success-animation">
+                    <!-- Giant animated heart -->
+                    <div class="giant-heart">❤️</div>
+                    
+                    <h1 class="success-title">
+                        Yay!! I knew you'd say yes!
+                    </h1>
+                    
+                    <p class="success-message">
+                        🥰 You just made my day! 💘
+                    </p>
+                    
+                    <!-- Floating celebration hearts -->
+                    <div class="celebration-container">
+                        <div class="celebration-heart">💖</div>
+                        <div class="celebration-heart">💕</div>
+                        <div class="celebration-heart">💗</div>
+                        <div class="celebration-heart">💝</div>
+                        <div class="celebration-heart">💘</div>
+                        <div class="celebration-heart">❤️</div>
+                        <div class="celebration-heart">💓</div>
+                        <div class="celebration-heart">💞</div>
+                        <div class="celebration-heart">💖</div>
+                        <div class="celebration-heart">💕</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
